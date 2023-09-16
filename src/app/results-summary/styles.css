@@ -1,0 +1,25 @@
+:root {
+  /* COLORS */
+  /* Primary */
+  --results-summary-light-red: 0deg 100% 67%;
+  --results-summary-orangey-yellow: 39deg 100% 56%;
+  --results-summary-Green-teal: 166deg 100% 37%;
+  --results-summary-Cobalt-blue: 234deg 85% 45%;
+  /* Gradients */
+  --results-summary-light-slate-blue: 252deg 100% 67%; /* background */
+  --results-summary-light-royal-blue: 241deg 81% 54%; /* background */
+  --results-summary-violet-blue: 256deg 72% 46%; /* circle */
+  --results-summary-persian-blue: 241deg 72% 46%; /* circle */
+  /* Neutral */
+  --results-summary-pale-blue: 221deg 100% 96;
+  --results-summary-light-lavender: 241deg 100% 89%;
+  --results-summary-dark-gray-blue: 224deg 30% 27%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
