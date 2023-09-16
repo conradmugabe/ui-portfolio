@@ -34,6 +34,7 @@ const config: Config = {
           "hsl(var(--results-summary-dark-gray-blue) / <alpha-value>)",
       },
       fontFamily: {
+        roboto: "var(--font-family-roboto)",
         "hanken-grotesk": "var(--font-family-hanken-grotesk)",
       },
     },
