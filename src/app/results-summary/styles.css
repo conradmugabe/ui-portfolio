@@ -15,11 +15,3 @@
   --results-summary-light-lavender: 241deg 100% 89%;
   --results-summary-dark-gray-blue: 224deg 30% 27%;
 }
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}

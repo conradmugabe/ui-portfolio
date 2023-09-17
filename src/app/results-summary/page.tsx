@@ -1,3 +1,4 @@
+import { FrontendMentorCopyright } from "@/components/copyright";
 import { Score } from "./components/score";
 import { resultsSummary } from "./data";
 
@@ -46,13 +47,7 @@ export default function ResultsSummary() {
         </div>
       </section>
 
-      <div className="attribution my-5">
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Conrad Mugabe</a>.
-      </div>
+      <FrontendMentorCopyright />
     </section>
   );
 }

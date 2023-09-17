@@ -32,10 +32,27 @@ const config: Config = {
           "hsl(var(--results-summary-light-lavender) / <alpha-value>)",
         "results-summary-dark-gray-blue":
           "hsl(var(--results-summary-dark-gray-blue) / <alpha-value>)",
+
+        // url shortening api
+        "url-shortening-api-cyan":
+          "hsl(var(--url-shortening-api-cyan) / <alpha-value>)",
+        "url-shortening-api-dark-violet":
+          "hsl(var(--url-shortening-api-dark-violet) / <alpha-value>)",
+        "url-shortening-api-red":
+          "hsl(var(--url-shortening-api-red) / <alpha-value>)",
+        "url-shortening-api-gray":
+          "hsl(var(--url-shortening-api-gray) / <alpha-value>)",
+        "url-shortening-api-grayish-violet":
+          "hsl(var(--url-shortening-api-grayish-violet) / <alpha-value>)",
+        "url-shortening-api-very-dark-blue":
+          "hsl(var(--url-shortening-api-very-dark-blue) / <alpha-value>)",
+        "url-shortening-api-very-dark-violet":
+          "hsl(var(--url-shortening-api-very-dark-violet) / <alpha-value>)",
       },
       fontFamily: {
         roboto: "var(--font-family-roboto)",
         "hanken-grotesk": "var(--font-family-hanken-grotesk)",
+        poppins: "var(--font-family-poppins)",
       },
     },
   },
