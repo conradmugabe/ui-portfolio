@@ -71,18 +71,17 @@ export default function UrlShorteningPage() {
   Improve brand awareness and content discoverability through customizable 
   links, supercharging audience engagement.
 </div>
-  </section>
-<section>
-<h2>
-
-  Boost your links today
-</h2>
-
-    <button>
-
-  Get Started
-    </button>
-</section> */}
+  </section> */}
+      <section className="py-16 bg-url-shortening-api-dark-violet bg-[url('/url-shortening-api/bg-boost-mobile.svg')] bg-no-repeat bg-cover sm:bg-[url('/url-shortening-api/bg-boost-desktop.svg')]">
+        <div className="flex flex-col items-center gap-6">
+          <h2 className="font-bold text-white tracking-wide text-3xl text-center">
+            Boost your links today
+          </h2>
+          <button className="text-white bg-url-shortening-api-cyan h-14 px-10 font-bold tracking-wide rounded-full">
+            Get Started
+          </button>
+        </div>
+      </section>
       <footer className="bg-url-shortening-api-very-dark-violet text-white py-20">
         <div className="flex flex-col items-center gap-9 max-w-6xl mx-auto lg:flex-row lg:items-start lg:gap-0 lg:justify-between">
           <Logo />
