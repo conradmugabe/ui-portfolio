@@ -77,9 +77,7 @@ export default function UrlShorteningPage() {
           <h2 className="font-bold text-white tracking-wide text-3xl text-center">
             Boost your links today
           </h2>
-          <button className="text-white bg-url-shortening-api-cyan h-14 px-10 font-bold tracking-wide rounded-full">
-            Get Started
-          </button>
+          <button className="btn btn-primary">Get Started</button>
         </div>
       </section>
       <footer className="bg-url-shortening-api-very-dark-violet text-white py-20">

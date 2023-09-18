@@ -1,3 +1,5 @@
+@tailwind components;
+
 :root {
   /* COLORS */
   /* Primary */
@@ -10,4 +12,13 @@
   --url-shortening-api-grayish-violet: 257deg 7% 63%;
   --url-shortening-api-very-dark-blue: 255deg 11% 22%;
   --url-shortening-api-very-dark-violet: 260deg 8% 14%;
+}
+
+@layer components {
+  .btn {
+    @apply h-14 px-10 text-lg font-bold tracking-wide rounded-full;
+  }
+  .btn-primary {
+    @apply text-white bg-url-shortening-api-cyan;
+  }
 }
