@@ -1,0 +1,11 @@
+:root {
+  /* COLORS */
+  /* Primary */
+  --news-homepage-main-soft-orange: 35deg 77% 62%;
+  --news-homepage-main-soft-red: 5deg 85% 63%;
+  /* Neutral */
+  --news-homepage-main-off-white: 36deg 100% 99%;
+  --news-homepage-main-grayish-blue: 233deg 8% 79%;
+  --news-homepage-main-dark-grayish-blue: 236deg 13% 42%;
+  --news-homepage-main-very-dark-blue: 240deg 100% 5%;
+}

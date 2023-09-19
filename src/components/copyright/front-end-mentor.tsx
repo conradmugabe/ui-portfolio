@@ -8,7 +8,7 @@ type Props = {
 
 export function FrontendMentorCopyright({ url = defaultUrl }: Props) {
   return (
-    <div className="attribution my-5">
+    <div className="attribution my-5 col-span-full">
       Challenge by{" "}
       <Link href={url} target="_blank">
         Frontend Mentor
