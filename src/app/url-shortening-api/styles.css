@@ -1,0 +1,36 @@
+@tailwind components;
+
+:root {
+  /* COLORS */
+  /* Primary */
+  --url-shortening-api-cyan: 180deg 66% 49%;
+  --url-shortening-api-dark-violet: 257deg 27% 26%;
+  /* Secondary */
+  --url-shortening-api-red: 0deg 87% 67%;
+  /* Neutral */
+  --url-shortening-api-gray: 0deg 0% 75%;
+  --url-shortening-api-grayish-violet: 257deg 7% 63%;
+  --url-shortening-api-very-dark-blue: 255deg 11% 22%;
+  --url-shortening-api-very-dark-violet: 260deg 8% 14%;
+}
+
+@layer components {
+  .btn {
+    @apply whitespace-nowrap tracking-wide rounded-lg hover:bg-blend-overlay;
+  }
+  .btn-small {
+    @apply h-10 px-6 text-base font-semibold rounded-md;
+  }
+  .btn-large {
+    @apply h-14 px-10 text-lg font-bold rounded-lg;
+  }
+  .btn-primary {
+    @apply text-white bg-url-shortening-api-cyan;
+  }
+  .btn-round {
+    @apply rounded-full;
+  }
+  .heading-2 {
+    @apply font-bold tracking-normal text-3xl text-center;
+  }
+}

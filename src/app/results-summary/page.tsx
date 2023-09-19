@@ -1,3 +1,4 @@
+import { FrontendMentorCopyright } from "@/components/copyright";
 import { Score } from "./components/score";
 import { resultsSummary } from "./data";
 
@@ -6,7 +7,7 @@ export default function ResultsSummary() {
     <section className="md:h-screen md:grid md:place-content-center">
       <section className="bg-white font-hanken-grotesk font-medium text-base space-y-8 max-w-3xl md:shadow-lg md:shadow-results-summary-light-lavender rounded-[2rem] md:grid md:grid-cols-2">
         <div className="flex flex-col items-center gap-5 bg-gradient-to-b from-results-summary-light-slate-blue to-results-summary-light-royal-blue rounded-b-[2rem] pt-6 pb-8 px-16 text-white md:rounded-[2rem] md:flex md:flex-col md:items-center md:justify-center md:gap-8">
-          <h2 className="text-results-summary-light-lavender md:text-2xl">
+          <h2 className="text-results-summary-light-lavender text-xl md:text-2xl">
             Your Result
           </h2>
           <div className="bg-gradient-to-b from-results-summary-violet-blue/100 to-results-summary-persian-blue/0 rounded-full flex flex-col items-center justify-center h-36 w-36 md:h-52 md:w-52">
@@ -46,13 +47,7 @@ export default function ResultsSummary() {
         </div>
       </section>
 
-      <div className="attribution mt-5">
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Conrad Mugabe</a>.
-      </div>
+      <FrontendMentorCopyright />
     </section>
   );
 }

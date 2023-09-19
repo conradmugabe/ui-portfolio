@@ -1,13 +1,6 @@
 import Link from "next/link";
 
-const projects = [
-  {
-    difficultyLevel: "1",
-    projectList: [
-      { name: "Results Summary Component", href: "/results-summary" },
-    ],
-  },
-];
+import { projects } from "./data";
 
 export default function Home() {
   return (
@@ -15,7 +8,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto pt-4 space-y-10">
         <h1 className="text-4xl text-center">UI Portfolio</h1>
         <section className="flex flex-col items-center gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <section
               key={project.difficultyLevel}
               className="flex flex-col items-center gap-4"
@@ -23,11 +16,11 @@ export default function Home() {
               <h3 className="text-2xl">
                 Difficulty Level: {project.difficultyLevel}
               </h3>
-              {project.projectList.map((project) => (
+              {project.projectList.map((project, index) => (
                 <Link
                   href={project.href}
                   key={project.href}
-                  className="text-lg"
+                  className="text-lg hover:underline underline-offset-4"
                 >
                   {index + 1}. {project.name}
                 </Link>
