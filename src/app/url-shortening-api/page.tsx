@@ -13,12 +13,12 @@ export default function UrlShorteningPage() {
     <>
       <NavBar />
       <section className="max-w-6xl mx-auto flex flex-col gap-8 py-8 px-4 md:flex-row-reverse md:pr-0 xl:px-0">
-        <div className="md:w-1/2">
+        <div className="relative h-80 w-full md:w-1/2 md:h-96 lg:h-[30rem]">
           <Image
             src="/url-shortening-api/illustration-working.svg"
             alt="illustration working"
-            width={375}
-            height={300}
+            fill
+            className="object-contain md:object-contain"
           />
         </div>
         <div className="flex flex-col items-center text-center gap-4 md:items-start md:text-left md:w-1/2">

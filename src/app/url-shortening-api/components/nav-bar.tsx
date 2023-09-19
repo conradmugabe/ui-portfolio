@@ -1,21 +1,16 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import { navLinks } from "../data";
 import { NavLinks } from "./nav-links";
+import { Logo } from "./logo";
+import { HamburgerMenu } from "./hamburger-menu";
 
 export function NavBar() {
   return (
     <header className="max-w-6xl mx-auto py-10 px-4 xl:px-0">
-      <nav className="flex items-center gap-16">
-        <Link href="#">
-          <Image
-            src="/url-shortening-api/logo.svg"
-            alt="shortly logo"
-            className=""
-            width={200}
-            height={50}
-          />
+      <nav className="flex items-center justify-between lg:justify-start gap-16">
+        <Link href="/">
+          <Logo />
         </Link>
         <div className="hidden space-x-5 lg:block">
           <NavLinks links={navLinks} />
@@ -28,6 +23,7 @@ export function NavBar() {
             Sign Up
           </button>
         </div>
+        <HamburgerMenu />
       </nav>
     </header>
   );

@@ -1,16 +1,16 @@
 import Image from "next/image";
-import { ElementRef } from "react";
 
 type Props = {};
 
 export function Logo({}: Props) {
   return (
-    <Image
-      src="/url-shortening-api/logo.svg"
-      alt="shortly logo"
-      className=""
-      width={200}
-      height={50}
-    />
+    <div className="relative h-6 w-24 md:h-8 md:w-28 lg:h-10 lg:w-32 xl:h-12 xl:w-36">
+      <Image
+        src="/url-shortening-api/logo.svg"
+        alt="shortly logo"
+        fill
+        className="object-contain"
+      />
+    </div>
   );
 }
