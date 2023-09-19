@@ -16,10 +16,13 @@
 
 @layer components {
   .btn {
-    @apply h-14 px-10 text-lg font-bold tracking-wide rounded-full;
+    @apply h-14 px-10 text-lg font-bold whitespace-nowrap tracking-wide rounded-lg;
   }
   .btn-primary {
     @apply text-white bg-url-shortening-api-cyan;
+  }
+  .btn-round {
+    @apply rounded-full;
   }
   .heading-2 {
     @apply font-bold tracking-normal text-3xl text-center;

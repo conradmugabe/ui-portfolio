@@ -38,19 +38,26 @@ export default function UrlShorteningPage() {
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary btn-round">Get Started</button>
         </div>
       </section>
-      {/* <section>
-    <input type="text"
-    placeholder="Shorten a link here..."
-    />
-    <button>
-
-  Shorten It!
-    </button>
-  </section> */}
-      <section className="bg-gray-100 py-20">
+      <section className="relative grid min-h-[11rem]">
+        <div className="bg-white" />
+        <div className="bg-gray-100" />
+        <div className="absolute left-0 right-0 bottom-0 top-0 m-auto max-w-5xl">
+          <div className="mx-4 p-5 flex flex-col items-center gap-4 rounded-xl bg-url-shortening-api-dark-violet bg-[url('/url-shortening-api/bg-shorten-mobile.svg')] bg-no-repeat bg-cover md:flex-row md:p-10 md:bg-[url('/url-shortening-api/bg-shorten-desktop.svg')] xl:p-14 xl:m-0">
+            <input
+              type="text"
+              placeholder="Shorten a link here..."
+              className="w-full h-14 px-4 rounded-lg placeholder:font-medium"
+            />
+            <button className="btn btn-primary w-full md:w-auto">
+              Shorten It!
+            </button>
+          </div>
+        </div>
+      </section>
+      <section className="bg-gray-100 pb-20 pt-14">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center gap-3 my-14">
             <h2 className="font-bold tracking-wide text-center text-4xl">
@@ -72,7 +79,7 @@ export default function UrlShorteningPage() {
           <h2 className="font-bold text-white tracking-wide text-3xl text-center">
             Boost your links today
           </h2>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary btn-round">Get Started</button>
         </div>
       </section>
       <footer className="bg-url-shortening-api-very-dark-violet text-white py-20">
