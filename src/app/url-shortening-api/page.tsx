@@ -61,7 +61,8 @@ export default function UrlShorteningPage() {
               advanced statistics dashboard.
             </p>
           </div>
-          <div className="mt-20 px-4 flex flex-col gap-20 md:flex-row md:gap-6 md:mt-28">
+          <div className="relative mt-20 px-4 flex flex-col gap-20 md:flex-row md:gap-6 md:mt-28 xl:px-0">
+            <div className="absolute left-0 right-0 top-0 bottom-0 m-auto bg-url-shortening-api-cyan w-2 md:w-[60vw] md:h-2" />
             <Cards cards={statistics} />
           </div>
         </div>

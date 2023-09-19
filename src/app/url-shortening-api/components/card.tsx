@@ -20,7 +20,7 @@ export function Card({ card, className }: CardProps) {
     <div
       className={`flex-1 bg-white rounded-lg px-8 pb-10 pt-20 relative ${className}`}
     >
-      <div className="bg-url-shortening-api-dark-violet h-24 w-24 rounded-full grid place-content-center absolute -top-12">
+      <div className="bg-url-shortening-api-dark-violet h-24 w-24 rounded-full grid place-content-center absolute -top-12 left-0 right-0 mx-auto md:mx-0 md:left-8">
         <Image src={card.icon} alt={card.title} width={40} height={40} />
       </div>
       <div className="space-y-4">
