@@ -1,13 +1,16 @@
-type Props = {
-  className?: string;
-};
+import Image from "next/image";
+import { ElementRef } from "react";
 
-export function Logo({ className }: Props) {
+type Props = {};
+
+export function Logo({}: Props) {
   return (
-    <h1
-      className={`text-white ${className} font-semibold text-4xl tracking-wide`}
-    >
-      Shortly
-    </h1>
+    <Image
+      src="/url-shortening-api/logo.svg"
+      alt="shortly logo"
+      className=""
+      width={200}
+      height={50}
+    />
   );
 }

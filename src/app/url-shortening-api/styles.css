@@ -16,7 +16,13 @@
 
 @layer components {
   .btn {
-    @apply h-14 px-10 text-lg font-bold whitespace-nowrap tracking-wide rounded-lg;
+    @apply whitespace-nowrap tracking-wide rounded-lg hover:bg-blend-overlay;
+  }
+  .btn-small {
+    @apply h-10 px-6 text-base font-semibold rounded-md;
+  }
+  .btn-large {
+    @apply h-14 px-10 text-lg font-bold rounded-lg;
   }
   .btn-primary {
     @apply text-white bg-url-shortening-api-cyan;

@@ -14,6 +14,7 @@ export function Socials({ socials }: Props) {
           alt={`${social} icon`}
           width={24}
           height={24}
+          className="cursor-pointer transition duration-300"
         />
       ))}
     </div>

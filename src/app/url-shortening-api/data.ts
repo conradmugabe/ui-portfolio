@@ -23,6 +23,6 @@ export const statistics = [
   },
 ];
 
-const navLinks = ["Features", "Pricing", "Resources"];
+export const navLinks = ["Features", "Pricing", "Resources"];
 
 export const socials = ["facebook", "twitter", "pinterest", "instagram"];
