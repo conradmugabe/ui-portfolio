@@ -21,4 +21,7 @@
   .btn-primary {
     @apply text-white bg-url-shortening-api-cyan;
   }
+  .heading-2 {
+    @apply font-bold tracking-normal text-3xl text-center;
+  }
 }

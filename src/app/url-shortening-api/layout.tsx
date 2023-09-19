@@ -13,5 +13,11 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <main className={`${font.variable} font-poppins`}>{children}</main>;
+  return (
+    <main
+      className={`${font.variable} font-poppins text-url-shortening-api-very-dark-violet`}
+    >
+      {children}
+    </main>
+  );
 }
