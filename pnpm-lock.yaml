@@ -53,6 +53,9 @@ dependencies:
   typescript:
     specifier: 5.2.2
     version: 5.2.2
+  ui-portfolio:
+    specifier: "link:"
+    version: "link:"
 
 devDependencies:
   husky:

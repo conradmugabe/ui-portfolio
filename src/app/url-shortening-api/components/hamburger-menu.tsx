@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 import classnames from "classnames";
 import { navLinks } from "../data";
-import Link from "next/link";
 
 export function HamburgerMenu() {
   const [open, setIsOpen] = useState(false);
