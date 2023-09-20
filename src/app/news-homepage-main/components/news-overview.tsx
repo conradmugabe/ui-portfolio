@@ -20,7 +20,7 @@ function NewsOverview({ news }: NewsOverviewProps) {
       <article className="space-y-2">
         <Link
           href="#"
-          className="text-news-homepage-main-off-white font-extrabold text-2xl cursor-pointer hover:text-news-homepage-main-soft-red sm:text-xl md:text-2xl lg:text-lg"
+          className="text-news-homepage-main-off-white font-extrabold text-2xl cursor-pointer transition duration-300 hover:text-news-homepage-main-soft-orange sm:text-xl md:text-2xl lg:text-lg"
         >
           {news.title}
         </Link>

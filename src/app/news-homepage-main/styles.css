@@ -9,3 +9,7 @@
   --news-homepage-main-dark-grayish-blue: 236deg 13% 42%;
   --news-homepage-main-very-dark-blue: 240deg 100% 5%;
 }
+
+.modal {
+  @apply fixed px-4 z-10 pt-24 left-0 top-0 w-full h-full bg-black bg-opacity-20 overflow-y-hidden;
+}

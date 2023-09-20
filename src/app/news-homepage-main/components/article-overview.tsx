@@ -30,7 +30,7 @@ function ArticleOverview({ article }: ArticleOverviewProps) {
         <h3 className="font-extrabold text-4xl text-news-homepage-main-grayish-blue">
           {article.id}
         </h3>
-        <h3 className="font-bold text-news-homepage-main-very-dark-blue">
+        <h3 className="font-bold text-news-homepage-main-very-dark-blue cursor-pointer transition duration-300 hover:text-news-homepage-main-soft-red">
           {article.title}
         </h3>
         <p className="text-sm text-news-homepage-main-dark-grayish-blue line-clamp-2">
@@ -43,7 +43,7 @@ function ArticleOverview({ article }: ArticleOverviewProps) {
 
 export function ArticleOverviews({ articles }: Props) {
   return (
-    <section className="grid gap-4 lg:grid-cols-3 lg:col-span-full">
+    <section className="grid gap-4 lg:grid-cols-3 lg:gap-5 lg:col-span-full">
       {articles.map((article) => (
         <ArticleOverview key={article.id} article={article} />
       ))}
