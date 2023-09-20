@@ -10,7 +10,7 @@ export default function NewsHomepageMain() {
   return (
     <>
       <NavBar links={links} />
-      <section className="relative w-full h-80 sm:col-span-full lg:col-span-2 lg:row-start-2">
+      <section className="relative w-full h-80 sm:col-span-full md:h-96 lg:h-80 lg:col-span-2 lg:row-start-2">
         <Image
           src="/news-homepage-main/image-web-3-mobile.jpg"
           alt="web 3 image"
@@ -28,7 +28,7 @@ export default function NewsHomepageMain() {
           power of the platforms back into the hands of the people. But is it
           really fulfilling its promise?
         </p>
-        <button className="uppercase font-semibold text-news-homepage-main-off-white bg-news-homepage-main-soft-red h-14 px-10 tracking-[0.2em]">
+        <button className="uppercase font-semibold text-news-homepage-main-off-white bg-news-homepage-main-soft-red h-14 px-10 tracking-[0.2em] transition duration-300 hover:bg-news-homepage-main-very-dark-blue">
           Read more
         </button>
       </section>

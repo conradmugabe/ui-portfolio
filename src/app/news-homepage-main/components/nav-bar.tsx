@@ -17,7 +17,7 @@ function NavLinks({ links }: NavLinksProps) {
         <Link
           key={link}
           href="#"
-          className="text-news-homepage-main-dark-grayish-blue hover:text-news-homepage-main-soft-orange"
+          className="text-news-homepage-main-dark-grayish-blue transition duration-300 hover:text-news-homepage-main-soft-orange"
         >
           {link}
         </Link>
@@ -43,11 +43,13 @@ export function NavBar({ links }: Props) {
   return (
     <header className="row-start-1 col-span-full pt-6 pb-1">
       <nav className="flex items-center justify-between">
-        <Logo />
+        <Link href="#">
+          <Logo />
+        </Link>
         <div className="hidden md:block md:space-x-8 lg:space-x-10 xl:space-x-12">
           <NavLinks links={links} />
         </div>
-        <HamburgerMenu />
+        <HamburgerMenu links={links} />
       </nav>
     </header>
   );
