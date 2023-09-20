@@ -13,6 +13,32 @@ type Props = {
   links: string[];
 };
 
+export function Menu({ links }: Props) {
+  return (
+    <div className="absolute bg-white w-3/4 h-screen right-0 pr-4 pl-10 py-12 flex flex-col gap-20">
+      <button className="relative block h-10 w-10 self-end sm:h-12 sm:w-12 md:hidden">
+        <Image
+          src={menuClose}
+          alt="hamburger menu"
+          fill
+          className="object-cover"
+        />
+      </button>
+      <div className="flex flex-col gap-5 items-start">
+        {links.map((link) => (
+          <Link
+            key={link}
+            href="#"
+            className="text-lg font-medium text-news-homepage-main-very-dark-blue hover:text-news-homepage-main-soft-orange"
+          >
+            {link}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function HamburgerMenu({ links }: Props) {
   const [open, setIsOpen] = useState(false);
 
@@ -21,42 +47,18 @@ export function HamburgerMenu({ links }: Props) {
 
   return (
     <>
-      <button
-        className="relative block h-6 w-8 sm:h-8 sm:w-10 md:hidden"
-        onClick={onOpen}
-      >
+      <button className="relative block h-6 w-14 md:hidden" onClick={onOpen}>
         <Image src={menu} alt="hamburger menu" fill className="object-cover" />
       </button>
       <div
-        className={classnames("modal", { hidden: !open })}
+        className={classnames("modal md:hidden", { hidden: !open })}
         onClick={(event) => {
           event.stopPropagation();
           onClose();
         }}
       >
-        <div className="pr-4 pl-10 py-10 w-[70%] h-screen bg-white text-white text-base font-semibold flex flex-col gap-20 hover:text-url-shortening-api-very-dark-blue">
-          <button
-            className="relative block h-6 w-8 self-end sm:h-8 sm:w-10 md:hidden"
-            onClick={onClose}
-          >
-            <Image
-              src={menuClose}
-              alt="hamburger menu"
-              fill
-              className="object-cover"
-            />
-          </button>
-          <div className="grid gap-5">
-            {links.map((link) => (
-              <Link
-                key={link}
-                href="#"
-                className="text-xl font-medium text-news-homepage-main-very-dark-blue"
-              >
-                {link}
-              </Link>
-            ))}
-          </div>
+        <div className="relative">
+          <Menu links={links} />
         </div>
       </div>
     </>
