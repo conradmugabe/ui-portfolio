@@ -35,7 +35,7 @@ function NewsOverview({ news }: NewsOverviewProps) {
 
 export function NewsOverviews({ news }: Props) {
   return (
-    <section className="bg-news-homepage-main-very-dark-blue p-4 space-y-8 md:p-6 lg:row-start-1 lg:row-span-2">
+    <section className="bg-news-homepage-main-very-dark-blue p-4 space-y-8 md:p-6 lg:row-start-2 lg:row-span-2">
       <h2 className="text-news-homepage-main-soft-orange text-4xl font-bold">
         New
       </h2>

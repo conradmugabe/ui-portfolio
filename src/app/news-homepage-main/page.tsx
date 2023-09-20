@@ -4,25 +4,25 @@ import { FrontendMentorCopyright } from "@/components/copyright";
 import { ArticleOverviews } from "./components/article-overview";
 import { NewsOverviews } from "./components/news-overview";
 import { NavBar } from "./components/nav-bar";
-import { articles, news } from "./data";
+import { articles, links, news } from "./data";
 
 export default function NewsHomepageMain() {
   return (
     <>
-      <NavBar />
-      <section className="relative w-full h-80 sm:col-span-full lg:col-span-2 lg:row-start-1">
+      <NavBar links={links} />
+      <section className="relative w-full h-80 sm:col-span-full lg:col-span-2 lg:row-start-2">
         <Image
           src="/news-homepage-main/image-web-3-mobile.jpg"
           alt="web 3 image"
           fill
         />
       </section>
-      <section className="lg:col-span-1 lg:row-start-2">
+      <section className="lg:col-span-1 lg:row-start-3">
         <h1 className="font-extrabold text-news-homepage-main-very-dark-blue text-5xl">
           The Bright Future of Web 3.0?
         </h1>
       </section>
-      <section className="space-y-4 lg:col-span-1 lg:row-start-2">
+      <section className="space-y-4 lg:col-span-1 lg:row-start-3">
         <p className="text-news-homepage-main-dark-grayish-blue">
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it

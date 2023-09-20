@@ -38,3 +38,5 @@ export const news = [
       "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
   },
 ];
+
+export const links = ["Home", "New", "Popular", "Trending", "Categories"];
