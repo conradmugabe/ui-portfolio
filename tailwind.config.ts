@@ -48,11 +48,26 @@ const config: Config = {
           "hsl(var(--url-shortening-api-very-dark-blue) / <alpha-value>)",
         "url-shortening-api-very-dark-violet":
           "hsl(var(--url-shortening-api-very-dark-violet) / <alpha-value>)",
+
+        // news homepage main
+        "news-homepage-main-soft-orange":
+          "hsl(var(--news-homepage-main-soft-orange) / <alpha-value>)",
+        "news-homepage-main-soft-red":
+          "hsl(var(--news-homepage-main-soft-red) / <alpha-value>)",
+        "news-homepage-main-off-white":
+          "hsl(var(--news-homepage-main-off-white) / <alpha-value>)",
+        "news-homepage-main-grayish-blue":
+          "hsl(var(--news-homepage-main-grayish-blue) / <alpha-value>)",
+        "news-homepage-main-dark-grayish-blue":
+          "hsl(var(--news-homepage-main-dark-grayish-blue) / <alpha-value>)",
+        "news-homepage-main-very-dark-blue":
+          "hsl(var(--news-homepage-main-very-dark-blue) / <alpha-value>)",
       },
       fontFamily: {
         roboto: "var(--font-family-roboto)",
         "hanken-grotesk": "var(--font-family-hanken-grotesk)",
         poppins: "var(--font-family-poppins)",
+        inter: "var(--font-family-inter)",
       },
     },
   },
