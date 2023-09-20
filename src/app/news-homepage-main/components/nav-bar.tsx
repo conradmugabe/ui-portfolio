@@ -49,7 +49,7 @@ export function NavBar({ links }: Props) {
         <div className="hidden md:block md:space-x-8 lg:space-x-10 xl:space-x-12">
           <NavLinks links={links} />
         </div>
-        <HamburgerMenu />
+        <HamburgerMenu links={links} />
       </nav>
     </header>
   );
