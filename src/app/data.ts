@@ -1,5 +1,14 @@
 export const projects = [
   {
+    difficultyLevel: "4",
+    projectList: [
+      {
+        name: "REST Countries API with color theme switcher",
+        href: "/rest-countries-api",
+      },
+    ],
+  },
+  {
     difficultyLevel: "3",
     projectList: [
       { name: "URL Shortening API Landing Page", href: "/url-shortening-api" },
