@@ -16,7 +16,13 @@ export const projects = [
   },
   {
     difficultyLevel: "2",
-    projectList: [{ name: "News Homepage", href: "/news-homepage-main" }],
+    projectList: [
+      { name: "News Homepage", href: "/news-homepage-main" },
+      {
+        name: "Sunnyside Agency Landing Page",
+        href: "/sunnyside-agency-landing-page",
+      },
+    ],
   },
   {
     difficultyLevel: "1",

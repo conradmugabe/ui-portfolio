@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --sunnyside-agency-landing-page-soft-red: 7deg 99% 70%;
+  --sunnyside-agency-landing-page-yellow: 51deg 100% 49%;
+  --sunnyside-agency-landing-page-dark-desaturated-cyan-graphic-design-text: 167deg
+    40% 24%;
+  --sunnyside-agency-landing-page-dark-blue-photography-text: 198deg 62% 26%;
+  --sunnyside-agency-landing-page-dark-moderate-cyan-footer: 168deg 34% 41%;
+  /* Neutral */
+  --sunnyside-agency-landing-page-very-dark-desaturated-blue: 212deg 27% 19%;
+  --sunnyside-agency-landing-page-very-dark-grayish-blue: 213deg 9% 39%;
+  --sunnyside-agency-landing-page-dark-grayish-blue: 232deg 10% 55%;
+  --sunnyside-agency-landing-page-grayish-blue: 210deg 4% 67%;
+  --sunnyside-agency-landing-page-white: 0deg 0% 100%;
+}
