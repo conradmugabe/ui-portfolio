@@ -62,12 +62,27 @@ const config: Config = {
           "hsl(var(--news-homepage-main-dark-grayish-blue) / <alpha-value>)",
         "news-homepage-main-very-dark-blue":
           "hsl(var(--news-homepage-main-very-dark-blue) / <alpha-value>)",
+
+        // rest countries api
+        "rest-countries-api-dark-blue-dark-mode-elements":
+          "hsl(var(--rest-countries-api-dark-blue-dark-mode-elements) / <alpha-value>)",
+        "rest-countries-api-very-dark-blue-dark-mode-background":
+          "hsl(var(--rest-countries-api-very-dark-blue-dark-mode-background) / <alpha-value>)",
+        "rest-countries-api-very-dark-blue-light-mode-text":
+          "hsl(var(--rest-countries-api-very-dark-blue-light-mode-text) / <alpha-value>)",
+        "rest-countries-api-dark-gray-light-mode-input":
+          "hsl(var(--rest-countries-api-dark-gray-light-mode-input) / <alpha-value>)",
+        "rest-countries-api-very-light-gray-light-mode-background":
+          "hsl(var(--rest-countries-api-very-light-gray-light-mode-background) / <alpha-value>)",
+        "rest-countries-api-white-dark-mode-text-light-mode-elements":
+          "hsl(var(--rest-countries-api-white-dark-mode-text-light-mode-elements) / <alpha-value>)",
       },
       fontFamily: {
         roboto: "var(--font-family-roboto)",
         "hanken-grotesk": "var(--font-family-hanken-grotesk)",
         poppins: "var(--font-family-poppins)",
         inter: "var(--font-family-inter)",
+        "nunito-sans": "var(--font-family-nunito-sans)",
       },
     },
   },
