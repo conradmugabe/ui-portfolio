@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 import { countryServices } from "@/bootstrap/rest-countries-api";
 import { CountryEntity } from "@/rest-countries-api/entities/country-entity";
-import Image from "next/image";
+import { GetCountries } from "@/rest-countries-api/entities/country-entity";
 
 type CountryCardProps = {
   country: CountryEntity;
@@ -49,8 +51,8 @@ function CountryCard({ country }: CountryCardProps) {
   );
 }
 
-export async function CountryList() {
-  const countries = await countryServices.getCountries();
+export async function CountryList(props?: GetCountries) {
+  const countries = await countryServices.getCountries(props);
 
   return (
     <div className="max-w-6xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3">

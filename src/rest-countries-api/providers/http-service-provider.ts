@@ -12,19 +12,21 @@ export class HttpServiceProvider implements ServiceProvider {
   constructor(private readonly config: Config) {}
 
   private getMany = async (params: string) => {
-    const response = await fetch(this.config.baseUrl + params);
+    const response = await fetch(`${this.config.baseUrl}${params}`);
     const data = await response.json();
     return data;
   };
 
-  getCountries = (props?: GetCountries): Promise<CountryEntity[]> => {
-    let params = "";
-    if (!props) {
-      params = "/all";
-      return this.getMany(params);
+  getCountries = ({
+    region,
+    search,
+  }: GetCountries): Promise<CountryEntity[]> => {
+    if (!search && !region) {
+      return this.getMany("/all");
     }
-    if (props?.search) params += `/name/${props.search}?fullText=true`;
-    if (props?.region) params += `/region/${props.region}`;
+    let params = "";
+    if (search && search.length > 0) params += `/name/${search}`;
+    if (region && region.length > 0) params += `/region/${region}`;
     return this.getMany(params);
   };
 }

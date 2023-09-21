@@ -14,6 +14,13 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <main className={`${font.variable} font-nunito-sans`}>{children}</main>
+    <main className={`${font.variable} font-nunito-sans`}>
+      <header className="py-7 px-4 drop-shadow-md shadow-md shadow-gray-300 xl:px-0">
+        <nav className="max-w-6xl mx-auto">
+          <h1 className="font-extrabold tracking-wide">Where in the world?</h1>
+        </nav>
+      </header>
+      {children}
+    </main>
   );
 }
