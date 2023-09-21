@@ -12,6 +12,7 @@ export class HttpServiceProvider implements ServiceProvider {
   constructor(private readonly config: Config) {}
 
   private getMany = async (params: string) => {
+    console.log("params", params);
     const response = await fetch(`${this.config.baseUrl}${params}`);
     const data = await response.json();
     return data;
@@ -25,8 +26,12 @@ export class HttpServiceProvider implements ServiceProvider {
       return this.getMany("/all");
     }
     let params = "";
-    if (search && search.length > 0) params += `/name/${search}`;
-    if (region && region.length > 0) params += `/region/${region}`;
+    const isSearchingByName = search && search.length > 0;
+    const isSearchingByRegion = region && region.length > 0;
+    if (isSearchingByName) params += `/name/${search}`;
+    if (isSearchingByRegion && isSearchingByName) params += `&region/${region}`;
+    if (isSearchingByRegion && !isSearchingByName)
+      params += `/region/${region}`;
     return this.getMany(params);
   };
 }
