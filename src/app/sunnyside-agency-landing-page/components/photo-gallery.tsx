@@ -8,7 +8,7 @@ export function PhotoGallery() {
       {photoGallery.map((photo) => (
         <div
           key={photo.alt}
-          className="relative h-52 sm:h-56 md:h-60 lg:h-72 xl:h-80"
+          className="relative h-52 sm:h-56 md:h-60 lg:h-96 xl:h-[30rem]"
         >
           <Image
             src={photo.image}
