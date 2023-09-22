@@ -9,7 +9,7 @@ const font = Barlow({
   variable: "--font-family-barlow",
 });
 
-export const font_two = Fraunces({
+const font_two = Fraunces({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-family-fraunces",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <main className={`${font.variable}`}>
+    <main className={`${font.variable} ${font_two.variable}`}>
       {children}
       <FrontendMentorCopyright />
     </main>
