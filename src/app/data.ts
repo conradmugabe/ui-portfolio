@@ -12,6 +12,11 @@ export const projects = [
     difficultyLevel: "3",
     projectList: [
       { name: "URL Shortening API Landing Page", href: "/url-shortening-api" },
+      {
+        name: "Manage Lading Page",
+        href: "https://manage-landing-page-sigma-two.vercel.app/",
+        target: "_blank",
+      },
     ],
   },
   {
