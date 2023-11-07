@@ -76,6 +76,28 @@ const config: Config = {
           "hsl(var(--rest-countries-api-very-light-gray-light-mode-background) / <alpha-value>)",
         "rest-countries-api-white-dark-mode-text-light-mode-elements":
           "hsl(var(--rest-countries-api-white-dark-mode-text-light-mode-elements) / <alpha-value>)",
+
+        // sunny agency landing page
+        "sunnyside-agency-landing-page-soft-red":
+          "hsl(var(--sunnyside-agency-landing-page-soft-red) / <alpha-value>)",
+        "sunnyside-agency-landing-page-yellow":
+          "hsl(var(--sunnyside-agency-landing-page-yellow) / <alpha-value>)",
+        "sunnyside-agency-landing-page-dark-desaturated-cyan-graphic-design-text":
+          "hsl(var(--sunnyside-agency-landing-page-dark-desaturated-cyan-graphic-design-text) / <alpha-value>)",
+        "sunnyside-agency-landing-page-dark-blue-photography-text":
+          "hsl(var(--sunnyside-agency-landing-page-dark-blue-photography-text) / <alpha-value>)",
+        "sunnyside-agency-landing-page-dark-moderate-cyan-footer":
+          "hsl(var(--sunnyside-agency-landing-page-dark-moderate-cyan-footer) / <alpha-value>)",
+        "sunnyside-agency-landing-page-very-dark-desaturated-blue":
+          "hsl(var(--sunnyside-agency-landing-page-very-dark-desaturated-blue) / <alpha-value>)",
+        "sunnyside-agency-landing-page-very-dark-grayish-blue":
+          "hsl(var(--sunnyside-agency-landing-page-very-dark-grayish-blue) / <alpha-value>)",
+        "sunnyside-agency-landing-page-dark-grayish-blue":
+          "hsl(var(--sunnyside-agency-landing-page-dark-grayish-blue) / <alpha-value>)",
+        "sunnyside-agency-landing-page-grayish-blue":
+          "hsl(var(--sunnyside-agency-landing-page-grayish-blue) / <alpha-value>)",
+        "sunnyside-agency-landing-page-white":
+          "hsl(var(--sunnyside-agency-landing-page-white) / <alpha-value>)",
       },
       fontFamily: {
         roboto: "var(--font-family-roboto)",
@@ -83,6 +105,8 @@ const config: Config = {
         poppins: "var(--font-family-poppins)",
         inter: "var(--font-family-inter)",
         "nunito-sans": "var(--font-family-nunito-sans)",
+        barlow: "var(--font-family-barlow)",
+        fraunces: "var(--font-family-fraunces)",
       },
     },
   },

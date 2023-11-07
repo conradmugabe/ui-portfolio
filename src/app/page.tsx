@@ -21,6 +21,7 @@ export default function Home() {
                   href={project.href}
                   key={project.href}
                   className="text-lg hover:underline underline-offset-4"
+                  target={project.target}
                 >
                   {index + 1}. {project.name}
                 </Link>
